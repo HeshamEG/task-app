@@ -1,0 +1,56 @@
+version: '3'
+
+services:
+    web:
+        build:
+          context: .
+          dockerfile: Dockerfile.dev
+        working_dir: /web
+        command: sh -c "npm install -s && npm run debug "
+        depends_on:
+          - db
+        ports:
+            - '1337:1337'
+        volumes:
+            - .:/web
+        env_file:
+            - dev.env
+    web-prod:
+        build:
+          context: .
+          dockerfile: Dockerfile.dev
+        working_dir: /web
+        command: sh -c "npm install -s && npm run prod"
+        depends_on:
+          - db
+        ports:
+            - '1338:1338'
+        volumes:
+            - .:/web
+        env_file:
+            - dev.env
+    swagger:
+        container_name: swagger
+        working_dir: /swagger
+        build:
+          context: .
+          dockerfile: Dockerfile.swagger
+        depends_on:
+          - web
+        command: sh -c "cd swagger-ui/dist && serve"
+        ports:
+          - '5000:5000'
+        volumes:
+          - .:/swagger
+    db:
+        container_name: mongodb
+        # command: sh -c "cd web"
+        working_dir: /web
+        image: mongo
+        ports:
+            - '27017:27017'
+            # - '9229:9229'
+        expose:
+            - '27017'
+        volumes:
+            - ./mongo:/data/db

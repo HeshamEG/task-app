@@ -1,0 +1,7 @@
+FROM node:14
+
+RUN mkdir -p /web && \
+  chown node:node /web
+RUN su node && yarn global add sails
+USER node
+WORKDIR /web
