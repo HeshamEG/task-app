@@ -1,0 +1,112 @@
+{
+	"variables": [],
+	"info": {
+		"name": "gatewaysAPI",
+		"_postman_id": "b2c3d1aa-a841-1bd1-3024-2ff9ba23881e",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "get gateway",
+			"request": {
+				"url": {
+					"raw": "http://localhost:1337/api/gateways/?id=",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "1337",
+					"path": [
+						"api",
+						"gateways",
+						""
+					],
+					"query": [
+						{
+							"key": "id",
+							"value": "",
+							"equals": true,
+							"description": ""
+						}
+					],
+					"variable": []
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "gateway create",
+			"request": {
+				"url": "http://localhost:1337/api/gateway/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"gate1\",\n\t\"IPv4address\":\"99.48.227\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "device create",
+			"request": {
+				"url": "http://localhost:1337/api/device/create",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"UID\":\"dd\"\n,\"vendor\":\"sss\",\n\"status\":0,\n\"gateway\":\"60ff3bef8dd9ef040817ebae\"\n\t\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "remove devices",
+			"request": {
+				"url": "http://localhost:1337/api/device/remove",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"gateway\":\"60ff3bef8dd9ef040817ebae\",\"id\":\"60ff3e6f5c296a042e7bb376\"}"
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
