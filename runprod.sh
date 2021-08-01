@@ -1,8 +1,8 @@
 #!/bin/bash
 
 cd backend
-sudo docker-compose build web-prod swagger db
-sudo docker-compose up -d web-prod swagger db
+sudo docker-compose build web swagger db
+sudo docker-compose up -d web swagger db
 
 cd ..
 cd frontend
