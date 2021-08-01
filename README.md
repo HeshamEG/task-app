@@ -30,5 +30,5 @@
 
 
 hints : 
-- run the app for 1st time will take some time to be installed 
-- i tryied to make some unit testing for redux but i couldn't complete it due too time and my availability 
+- run the docker for 1st time will take some time to be setupped and install dependancies .
+- i tryied to make some unit testing for redux but i couldn't complete it due too time and my availability .
