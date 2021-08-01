@@ -21,7 +21,7 @@
 
 # Run the app in prod mode
 - `sh runprod.sh`
-- backend will run on http://localhost:1338
+- backend will run on http://localhost:1337
 - swagger UI will run on http://localhost:5000 ( note: theres a known issue its generating not included endpoints )
 - reactjs on http://localhost:3000
 # Stop dev mode
