@@ -5,6 +5,3 @@ RUN  apt-get update && apt-get install -y yarn
 COPY package.json .
 
 COPY . .
-
-
-

@@ -17,13 +17,13 @@
 - `sh rundev.sh`
 - backend will run on http://localhost:1337
 - swagger UI will run on http://localhost:5000 ( note: theres a known issue its generating extra endpoints you can use postman included file in the root project gatewaysAPI.postman_collection.json if you feel inconvenient)
-- reactjs on http://localhost:3000
+- reactjs on http://localhost:4200
 
 # Run the app in prod mode
 - `sh runprod.sh`
 - backend will run on http://localhost:1337
 - swagger UI will run on http://localhost:5000 ( note: theres a known issue its generating not included endpoints )
-- reactjs on http://localhost:3000
+- reactjs on http://localhost:4200
 # Stop dev mode
 - `sh stopdev.sh`
 

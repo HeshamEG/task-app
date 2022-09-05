@@ -13,7 +13,7 @@ root.render(
 	<StrictMode>
     <Provider store={store}>
       <ThemeProvider theme={responsiveTheme}>
-			  <App />
+		<App />
       </ThemeProvider>
 		</Provider>
 	</StrictMode>
