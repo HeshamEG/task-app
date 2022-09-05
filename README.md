@@ -7,7 +7,7 @@
 - sailsjs
 - mongodb
 - swagger
-- reactjs & react hooks
+- react NX https://nx.dev/getting-started/intro , react hooks , formik
 - typescript
 - redux & redux-observable
 - jest & marbles diagram
