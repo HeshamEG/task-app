@@ -3,9 +3,12 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "start": "nx serve",
+    "crud:start": "nx serve web-react-task",
+    "products:start": "nx serve products-app",
+    "many:start": "nx run-many --parallel --target=serve --projects=products-app,web-react-task",
     "build": "nx build",
-    "test": "nx test"
+    "test": "nx test",
+    "products:test": "nx test products-app"
   },
   "private": true,
   "dependencies": {
@@ -13,6 +16,7 @@
     "@material-ui/icons": "^4.11.2",
     "@material-ui/lab": "^4.0.0-alpha.60",
     "@material-ui/pickers": "^3.3.10",
+    "@types/react-csv": "^1.1.3",
     "axios": "^0.27.2",
     "core-js": "^3.6.5",
     "formik": "^2.2.9",
@@ -20,6 +24,7 @@
     "moment": "^2.29.4",
     "query-string": "^7.1.1",
     "react": "18.2.0",
+    "react-csv": "^2.2.2",
     "react-dom": "18.2.0",
     "react-redux": "8",
     "react-router-dom": "^6.3.0",

@@ -2,6 +2,8 @@
   "$schema": "./node_modules/nx/schemas/workspace-schema.json",
   "version": 2,
   "projects": {
+    "products-app": "apps/products-app",
+    "products-app-e2e": "apps/products-app-e2e",
     "web-react-task": "apps/web-react-task",
     "web-react-task-e2e": "apps/web-react-task-e2e"
   }
