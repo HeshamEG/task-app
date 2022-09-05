@@ -9,7 +9,7 @@ services:
         working_dir: /app
         command: sh -c "yarn && yarn start "
         ports:
-            - "3000:3000"
+            - "4200:4200"
         volumes:
             - .:/app
         env_file:
@@ -23,7 +23,7 @@ services:
         command: sh -c "yarn && yarn run build && serve -s build"
 
         ports:
-            - "3000:3000"
+            - "4200:4200"
         volumes:
             - .:/app
         env_file:
