@@ -1,8 +1,8 @@
 # Info 
   - this repo consist of 3 apps 
-      1 - backend app under /backend
-      2 - a simple CRUD app to manage network gateways and allawed devices under dir /frontend/apps/web-react-task .
-      3 - the problem solving app under dir /frontend/apps/products-app .
+      - backend app under /backend
+      - a simple CRUD app to manage network gateways and allawed devices under dir /frontend/apps/web-react-task .
+      - the problem solving app under dir /frontend/apps/products-app .
   - i was depending on NX mono repo for frontend , the plan was to include the backend as well but accourding to time i couldn't do tons of my plan :( .
 
 # Tech used
