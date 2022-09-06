@@ -1,5 +1,9 @@
-#  Info
-- this is a test app for managing gateways and devices
+# Info 
+  - this repo consist of 3 apps 
+      - backend app under /backend
+      - a simple CRUD app to manage network gateways and allawed devices under dir /frontend/apps/web-react-task .
+      - the problem solving app under dir /frontend/apps/products-app .
+  - i was depending on NX mono repo for frontend , the plan was to include the backend as well but accourding to time i couldn't do tons of my plan :( .
 
 # Tech used
 
@@ -14,20 +18,17 @@
 - material UI
 
 # Run the app in dev mode
-- `sh rundev.sh`
-- backend will run on http://localhost:1337
+- `sh rundev.sh` or the commands included in that file if you are not using bash .
+- backend will run on http://localhost:1337 .
 - swagger UI will run on http://localhost:5000 ( note: theres a known issue its generating extra endpoints you can use postman included file in the root project gatewaysAPI.postman_collection.json if you feel inconvenient)
-- reactjs on http://localhost:4200
+- reactjs on http://localhost:8080 , http://localhost:8081 .
 
-# Run the app in prod mode
-- `sh runprod.sh`
-- backend will run on http://localhost:1337
-- swagger UI will run on http://localhost:5000 ( note: theres a known issue its generating not included endpoints )
-- reactjs on http://localhost:4200
 # Stop dev mode
 - `sh stopdev.sh`
 
-
+# Unit Testing 
+- to run jest please use for the problem solving task use `yarn run products:test` inside the `frontend directory`
+- for testing the CRUD app as well use `yarn run test` .
 
 hints : 
 - run the docker for 1st time will take some time to be setupped and install dependancies .
