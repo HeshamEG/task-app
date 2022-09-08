@@ -3,7 +3,7 @@
       - backend app under /backend
       - a simple CRUD app to manage network gateways and allawed devices under dir /frontend/apps/web-react-task .
       - the problem solving app under dir /frontend/apps/products-app .
-  - i was depending on NX mono repo for frontend , the plan was to include the backend as well but accourding to time i couldn't do tons of my plan :( .
+  - i was depending on NX mono repo for frontend , the plan was to make a lot of refactoring but accourding to time i couldn't do tons of enhancments can be done .
 
 # Tech used
 
